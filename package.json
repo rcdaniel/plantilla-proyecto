@@ -4,11 +4,13 @@
   "description": "Plantilla básica",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify:css": "postcss src/css/main.pcss -o dist/css/main.css"
   },
   "author": "Daniel Ramírez",
   "license": "ISC",
   "dependencies": {
+    "npm-run-all": "^4.1.3",
     "parcel-bundler": "^1.10.1"
   },
   "devDependencies": {
